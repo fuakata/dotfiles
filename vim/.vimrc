@@ -128,14 +128,14 @@ set number
 syntax enable 
 
 " Enable 256 colors palette in Gnome Terminal
-"if $COLORTERM == 'gnome-terminal'
-"    set t_Co=256
-"endif
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
 
-"try
-"    colorscheme desert
-"catch
-"endtry
+" try
+"   colorscheme delek
+"   catch
+" endtry
 
 set background=dark
 
@@ -337,6 +337,7 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VimPlug configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -348,9 +349,17 @@ endif
 
 
 call plug#begin('~/.vim/plugged')
-Plug 'itchyny/lightline.vim'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'yggdroot/indentline'
 Plug 'edkolev/tmuxline.vim'
+"Plug 'itchyny/lightline.vim'
 "Plug 'benmills/vimux'
 "Plug 'tpope/vim-sensible'
+
 call plug#end()
+
+"Add Powerline fonts to vim-airline
+let g:airline_powerline_fonts = 1
+
