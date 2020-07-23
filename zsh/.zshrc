@@ -1,3 +1,12 @@
+#   _           
+#  (_)_ __ __ _ 
+#  | | '__/ _` |
+#  | | | | (_| |
+# _/ |_|  \__, |
+# |__/     |___/ 
+#
+# Filename: .zshrc
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
