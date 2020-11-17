@@ -1,12 +1,3 @@
-#   _           
-#  (_)_ __ __ _ 
-#  | | '__/ _` |
-#  | | | | (_| |
-# _/ |_|  \__, |
-# |__/     |___/ 
-#
-# Filename: .bashrc
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples

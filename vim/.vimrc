@@ -5,11 +5,9 @@
 " _/ |_|  \__, |
 " |__/     |___/ 
 "
-" Filename: .vimrc
+" Filename: .zshrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
-"       Amir Salihefendic — @amix3k
 "
 " Awesome_version:
 "       Get this config, nice color schemes and lots of plugins!
@@ -361,8 +359,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+"Plug 'romkatv/powerlevel10k'
 Plug 'yggdroot/indentline'
 Plug 'edkolev/tmuxline.vim'
+Plug 'pearofducks/ansible-vim'
+Plug 'scrooloose/nerdtree'
 "Plug 'itchyny/lightline.vim'
 "Plug 'benmills/vimux'
 "Plug 'tpope/vim-sensible'
@@ -371,4 +372,8 @@ call plug#end()
 
 "Add Powerline fonts to vim-airline
 let g:airline_powerline_fonts = 1
+
+
+"Add Control-N to Toogle On NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
