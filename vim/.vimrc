@@ -3,9 +3,9 @@
 "  | | '__/ _` |
 "  | | | | (_| |
 " _/ |_|  \__, |
-" |__/     |___/ 
+"|__/     |___/ 
 "
-" Filename: .zshrc
+" Filename: .vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -43,6 +43,7 @@ set history=500
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+set omnifunc=syntaxcomplete#Complete
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -367,8 +368,16 @@ Plug 'scrooloose/nerdtree'
 "Plug 'itchyny/lightline.vim'
 "Plug 'benmills/vimux'
 "Plug 'tpope/vim-sensible'
+Plug 'hashivim/vim-terraform'
+Plug 'vim-syntastic/syntastic'
+Plug 'juliosueiras/vim-terraform-completion'
+"Plug 'shougo/deoplete.nvim'
 
 call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Other configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Add Powerline fonts to vim-airline
 let g:airline_powerline_fonts = 1
@@ -377,3 +386,5 @@ let g:airline_powerline_fonts = 1
 "Add Control-N to Toogle On NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1

@@ -3,7 +3,7 @@
 #  | | '__/ _` |
 #  | | | | (_| |
 # _/ |_|  \__, |
-# |__/     |___/ 
+#|__/     |___/ 
 #
 # Filename: .zshrc
 
@@ -84,7 +84,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ansible cp docker git kubectl helm colored-man-pages minikube themes vagrant web-search)
+plugins=(ansible cp docker git kubectl helm colored-man-pages minikube terraform themes vagrant web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,6 +116,8 @@ source $ZSH/oh-my-zsh.sh
 alias cat="batcat"
 #
 #
+alias v="vim"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
