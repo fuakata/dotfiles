@@ -26,13 +26,12 @@
 "    -> Moving around, tabs and buffers
 "    -> Status line
 "    -> Editing mappings
-"    -> vimgrep searching and cope displaying
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
-"
+"    -> VimPlug configuration
+"    -> Other configuration    
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -370,6 +369,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
+"Plug 'davidhalter/jedi-vim'
 "Plug 'shougo/deoplete.nvim'
 
 call plug#end()
