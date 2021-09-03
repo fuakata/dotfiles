@@ -17,7 +17,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-#Add /usr/local/go/bin to the PATH environment variable
+#Add /usr/local/go/bin to the PATH environment variable.
 export PATH=$PATH:/usr/local/go/bin
 
 # Path to your oh-my-zsh installation.
@@ -87,7 +87,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ansible cp docker docker-compose git kubectl helm colored-man-pages minikube terraform themes vagrant web-search zsh-autosuggestions)
+plugins=(ansible cp docker docker-compose git kubectl helm colored-man-pages minikube terraform themes vagrant web-search zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,9 +117,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cat="batcat"
-#
-#
-alias v="vim"
+
+# get zsh complete kubectl
+# source <(kubectl completion zsh)
+alias kubectl=kubecolor
+# make completion work with kubecolor
+compdef kubecolor=kubectl
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
