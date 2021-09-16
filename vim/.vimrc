@@ -388,3 +388,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+
+"Add additional indentation format for YAML files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+let g:indentLine_char = '⦙'
