@@ -87,7 +87,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ansible cp docker docker-compose git kubectl helm colored-man-pages minikube terraform themes vagrant web-search zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(ansible brew cp docker docker-compose git kubectl helm colored-man-pages minikube terraform themes vagrant web-search zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,7 +119,7 @@ source $ZSH/oh-my-zsh.sh
 alias cat="batcat"
 
 # get zsh complete kubectl
-# source <(kubectl completion zsh)
+source <(kubectl completion zsh)
 alias kubectl=kubecolor
 # make completion work with kubecolor
 compdef kubecolor=kubectl
@@ -127,3 +127,4 @@ compdef kubecolor=kubectl
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet

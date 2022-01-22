@@ -140,7 +140,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 " try
-"   colorscheme delek
+" colorscheme one
 "   catch
 " endtry
 
@@ -367,6 +367,7 @@ Plug 'scrooloose/nerdtree'
 "Plug 'itchyny/lightline.vim'
 "Plug 'tpope/vim-sensible'
 Plug 'hashivim/vim-terraform'
+Plug 'vim-ruby/vim-ruby'
 Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
 "Plug 'davidhalter/jedi-vim'
