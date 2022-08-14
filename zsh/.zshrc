@@ -124,7 +124,11 @@ alias kubectl=kubecolor
 # make completion work with kubecolor
 compdef kubecolor=kubectl
 
+# Add the $HOME/.krew/bin directory to your PATH environment variable.
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+

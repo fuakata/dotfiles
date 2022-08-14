@@ -122,10 +122,12 @@ set tm=500
 " Add a bit extra margin to the left
 "set foldcolumn=1
 
-" Add row numbers
-set number 
+" Add absolute line numbers
+" set number 
 
 
+" Add hybrid line numbers
+set number relativenumber
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
