@@ -123,11 +123,11 @@ set tm=500
 "set foldcolumn=1
 
 " Add absolute line numbers
-" set number 
+set number 
 
 
 " Add hybrid line numbers
-set number relativenumber
+" set number relativenumber
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -362,6 +362,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Plug 'romkatv/powerlevel10k'
+Plug 'tpope/vim-fugitive'
 Plug 'yggdroot/indentline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'pearofducks/ansible-vim'
