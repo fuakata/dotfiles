@@ -375,6 +375,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
 "Plug 'davidhalter/jedi-vim'
 "Plug 'shougo/deoplete.nvim'
+Plug 'tpope/vim-surround'
+Plug 'slim-template/vim-slim'
 Plug 'vim-scripts/ZoomWin'
 
 call plug#end()

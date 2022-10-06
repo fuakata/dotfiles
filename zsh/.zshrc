@@ -124,6 +124,11 @@ alias kubectl=kubecolor
 # make completion work with kubecolor
 compdef kubecolor=kubectl
 
+# Suffix aliases
+alias -s zip="unzip -l"
+alias -s gz="tar -tf"
+alias -s tgz="tar -tf"
+
 # Add the $HOME/.krew/bin directory to your PATH environment variable.
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
