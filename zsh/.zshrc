@@ -121,6 +121,7 @@ alias cat="batcat"
 # get zsh complete kubectl
 source <(kubectl completion zsh)
 alias kubectl=kubecolor
+
 # make completion work with kubecolor
 compdef kubecolor=kubectl
 

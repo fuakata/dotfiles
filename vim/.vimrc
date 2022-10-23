@@ -42,6 +42,8 @@ set history=500
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+
+" Omni completion provides smart autocompletion for programs.  
 set omnifunc=syntaxcomplete#Complete
 
 " Set to auto read when a file is changed from the outside
@@ -123,11 +125,10 @@ set tm=500
 "set foldcolumn=1
 
 " Add absolute line numbers
-set number 
-
+" set number 
 
 " Add hybrid line numbers
-" set number relativenumber
+set number relativenumber
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -361,23 +362,20 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Plug 'romkatv/powerlevel10k'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'yggdroot/indentline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'pearofducks/ansible-vim'
 Plug 'scrooloose/nerdtree'
-"Plug 'itchyny/lightline.vim'
-"Plug 'tpope/vim-sensible'
 Plug 'hashivim/vim-terraform'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-syntastic/syntastic'
-Plug 'juliosueiras/vim-terraform-completion'
-"Plug 'davidhalter/jedi-vim'
-"Plug 'shougo/deoplete.nvim'
-Plug 'tpope/vim-surround'
 Plug 'slim-template/vim-slim'
 Plug 'vim-scripts/ZoomWin'
+Plug 'severin-lemaignan/vim-minimap'
+Plug 'philrunninger/nerdtree-visual-selection'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -385,9 +383,23 @@ call plug#end()
 " => Other configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Use fontawesome icons as signs
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '>'
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed_first_line = '^'
+let g:gitgutter_sign_modified_removed = '<'
+
+let g:gitgutter_override_sign_column_highlight = 1
+highlight SignColumn guibg=NONE
+highlight SignColumn ctermbg=NONE
+
+" Update sign column every quarter second
+set updatetime=250
+
 "Add Powerline fonts to vim-airline
 let g:airline_powerline_fonts = 1
-
+"let g:airline_theme='powerlineish'
 
 "Add Control-N to Toogle On NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -398,3 +410,5 @@ let g:terraform_fmt_on_save=1
 "Add additional indentation format for YAML files
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'
+
+
