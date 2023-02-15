@@ -376,6 +376,10 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'philrunninger/nerdtree-visual-selection'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug 'davidhalter/jedi-vim'
+Plug 'terrastruct/d2-vim'
+
+
 
 call plug#end()
 
