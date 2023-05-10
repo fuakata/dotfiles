@@ -87,7 +87,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases ansible aws brew cp docker docker-compose extract gh git kubectl helm colored-man-pages minikube terraform themes vagrant web-search zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(aliases azcli ansible aws brew cp docker docker-compose extract gh git kubectl helm colored-man-pages minikube terraform themes vagrant web-search zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -138,3 +138,6 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
+# Set autocompletion for AZ CLI.
+autoload -U +X bashcompinit && bashcompinit
+source /etc/bash_completion.d/azure-cli
