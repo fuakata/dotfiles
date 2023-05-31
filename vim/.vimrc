@@ -380,8 +380,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'davidhalter/jedi-vim'
 Plug 'terrastruct/d2-vim'
 
-
-
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
