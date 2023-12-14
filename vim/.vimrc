@@ -379,6 +379,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'davidhalter/jedi-vim'
 Plug 'terrastruct/d2-vim'
+Plug 'tpope/vim-surround'
+Plug 'carlsmedstad/vim-bicep'
 
 call plug#end()
 
