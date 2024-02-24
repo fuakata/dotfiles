@@ -149,6 +149,22 @@ endif
 
 set background=dark
 
+" Configure Solarized Colorscheme for Vim
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=0
+"colorscheme solarized
+
+" Configure Onedark Colorscheme for Vim
+"if (has("autocmd") && !has("gui_running"))
+"  augroup colorset
+"    autocmd!
+"    let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+"    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+"  augroup END
+"endif
+"colorscheme onedark
+
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -379,6 +395,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'davidhalter/jedi-vim'
 Plug 'terrastruct/d2-vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-surroundi'
+Plug 'carlsmedstad/vim-bicep'
 
 call plug#end()
 
